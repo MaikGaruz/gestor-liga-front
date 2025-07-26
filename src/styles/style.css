@@ -1,0 +1,28 @@
+/* ESTILOS GENERALES*/
+* {
+    margin: 0;
+}
+
+/* FONDO MODERNO RADIAL ESMERALDA*/
+.fondo-gradiente {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #09123b;
+    overflow: hidden;
+}
+
+.fondo-gradiente::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(circle 500px at 50% 300px,
+            rgba(186, 230, 253, 0.9),
+            transparent);
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+}
